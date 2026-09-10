@@ -7,11 +7,11 @@ class Program
         var owner = new Owner
         {
         };
-        Console.WriteLine("Enter the owner's name:");
+        Console.WriteLine("Ievadiet vārdu:");
         owner.Name = Console.ReadLine();
-        Console.WriteLine("Enter the owner's surname:");
+        Console.WriteLine("Ievadiet uzvārdu:");
         owner.Surname = Console.ReadLine();
-        Console.WriteLine("Enter the owner's address:");
+        Console.WriteLine("Ievadiet adresi:");
         owner.Address = Console.ReadLine();
 
         context.Owners.Add(owner);
