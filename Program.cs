@@ -16,6 +16,9 @@ class Program
 
         context.Owners.Add(owner);
         context.SaveChanges();
+
+
+
         Console.WriteLine($ "Owner {owner.Name} {owner.Surname} added successfully with ID {owner.Id}.");
     }
 }
