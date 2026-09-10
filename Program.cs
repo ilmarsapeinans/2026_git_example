@@ -21,4 +21,12 @@ class Program
 
         Console.WriteLine($ "Owner {owner.Name} {owner.Surname} added successfully with ID {owner.Id}.");
     }
+    public static void DisplayOwners(CarDBContext context)
+    {
+        var owners = context.Owners.ToList();
+        foreach (var owner in owners)
+        {
+            Console.WriteLine($"ID: {owner.Id}, Name: {owner.Name}, Surname: {owner.Surname}, Address: {owner.Address}");
+        }
+    }
 }
